@@ -1,0 +1,188 @@
+/* NAvbar css */
+ 
+.nav-link{
+    margin-left:40px ;
+}
+.anchor a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+    margin-top: 15px;
+}
+
+.anchor a:hover{
+    color: #007bff;
+     
+}
+
+/* footer css */
+
+.footer-bottom-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    opacity: 0.75;
+    margin-bottom: 15px
+
+}
+.footer-bottom-link a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+    margin-top: 5px;
+    margin-left: 0 15px;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.social-media i{
+    opacity: 0.75;
+    font-size: larger;
+    margin-right: 30px;
+}
+
+
+/* brokerage li item css */
+
+.broker-list li {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+/* anchor-ticket-link
+ */
+
+.anchor-ticket-link a{
+    display: block;
+}
+
+/* support section */
+.supporthero a{
+    color: white;
+     
+}
+.support-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+
+/* signup page css*/
+
+/* Center everything vertically and horizontally */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  background: #f5f7fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form styling */
+.signup-form {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+/* Heading */
+.signup-form h2 {
+  margin-bottom: 25px;
+  color: #1e1e1e;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.signup-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-btn:hover {
+  background: #0056b3;
+}
+
+
+/* Login page*/
+
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+    background: #f5f7fa;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-form{
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+.login-btn{
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;   
+}
+
+.login-btn:hover{
+    background: #0056b3;
+
+}
+
+

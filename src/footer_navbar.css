@@ -1,0 +1,75 @@
+/* NAvbar css */
+
+.nav-link{
+    margin-left:40px ;
+}
+.anchor a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+    margin-top: 15px;
+}
+
+.anchor a:hover{
+    color: #007bff;
+     
+}
+
+/* footer css */
+
+.footer-bottom-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    opacity: 0.75;
+    margin-bottom: 15px
+
+}
+.footer-bottom-link a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+    margin-top: 5px;
+    margin-left: 0 15px;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.social-media i{
+    opacity: 0.75;
+    font-size: larger;
+    margin-right: 30px;
+}
+
+
+/* brokerage li item css */
+
+.broker-list li {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+/* anchor-ticket-link
+ */
+
+.anchor-ticket-link a{
+    display: block;
+}
+
+/* support section */
+.supporthero a{
+    color: white;
+     
+}
+.support-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
