@@ -16,7 +16,7 @@ function Signup() {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:8080/signup", // backend url
+        "https://zerodha-backend-pho2.onrender.com/signup", // backend url
         {
           name,
           email,
@@ -25,7 +25,7 @@ function Signup() {
         }
       );
 
-          window.location.href = "http://localhost:5173/";
+          window.location.href = "https://zerodha-lyart-three.vercel.app//";
 
     } catch (error) {
       console.error(error.response?.data || error.message);
