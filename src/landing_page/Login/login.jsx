@@ -16,10 +16,10 @@ function Login() {
 
     try {
       await axios.post(
-        "https://zerodha-backend-pho2.onrender.com/login", // backend url
+        "https://zerodha-backend-pho2.onrender.com/login", // backend url frontend
         { email, password }
       ),
-          window.location.href = "https://zerodha-lyart-three.vercel.app/";
+          window.location.href = "https://zerodha-lyart-three.vercel.app/";  // dashboard url link
 
     } catch (err) {
       navigate("/signup");
