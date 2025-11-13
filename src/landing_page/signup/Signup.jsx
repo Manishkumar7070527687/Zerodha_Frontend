@@ -13,7 +13,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
+      const res = await axios.post(
         "https://zerodha-backend-pho2.onrender.com/auth/signup", // backend url
         {
           name,
@@ -23,7 +23,12 @@ function Signup() {
         },
         {withCredentials:true}
       );
-       window.location.href = "https://zerodha-lyart-three.vercel.app/";
+      if(res.status == 201){
+        window.location.href = "https://zerodha-lyart-three.vercel.app/";
+      }
+      else{
+        alert(res.data.message || "Signup not completed")
+      }
  
     } catch (error) {
       alert(error.response?.data?.message || "registration failed dut to some")
