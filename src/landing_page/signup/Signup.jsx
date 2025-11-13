@@ -23,8 +23,8 @@ function Signup() {
         },
         {withCredentials:true}
       );
-
-      window.location.href = "https://zerodha-lyart-three.vercel.app/";
+       window.location.href = "https://zerodha-lyart-three.vercel.app/";
+ 
     } catch (error) {
       alert(error.response?.data?.message || "registration failed dut to some")
       console.error(error.response?.data || error.message);
