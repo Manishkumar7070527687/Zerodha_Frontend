@@ -17,7 +17,8 @@ function Login() {
     try {
       await axios.post(
         "https://zerodha-backend-pho2.onrender.com/auth/login", // backend url frontend
-        { email, password }
+        { email, password },
+        {withCredentials:true},
       ),
           window.location.href = "https://zerodha-lyart-three.vercel.app/";  // dashboard url link
 
