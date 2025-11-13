@@ -7,7 +7,7 @@ import AboutPage from "./landing_page/about/AboutPage";
 import Signup from "./landing_page/signup/Signup";
 import Login from "./landing_page/Login/login";
 import ProductPage from "./landing_page/products/ProductPage";
-// import PricePage from "./landing_page/Pricing/PricingPage.jsx";
+import PricePage from "./landing_page/pricing/PricingPage";
 import SupportPage from "./landing_page/supports/SupportPAge";
 import NotFound from "./NotFound";
 
