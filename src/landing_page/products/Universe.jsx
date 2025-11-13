@@ -96,7 +96,7 @@ function Universe() {
         </div>
       </div>
       <div className="text-center " style={{margin:"30px", marginBottom:"50px", }}>
-         <Link to={"/signup"}><button className=" fs-4 text-white rounded " style={{backgroundColor:"#387ED1" ,border: "1px solid  #387ED1"  }}>
+         <Link to={"/product/signup"}><button className=" fs-4 text-white rounded " style={{backgroundColor:"#387ED1" ,border: "1px solid  #387ED1"  }}>
           Sign up for free
         </button></Link>
       </div>
