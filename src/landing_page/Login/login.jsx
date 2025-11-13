@@ -15,12 +15,17 @@ function Login() {
     e.preventDefault();
 
     try {
-      await axios.post(
+    const res =   await axios.post(
         "https://zerodha-backend-pho2.onrender.com/auth/login", // backend url frontend
         { email, password },
         {withCredentials:true},
-      ),
-          window.location.href = "https://zerodha-lyart-three.vercel.app/";  // dashboard url link
+      )
+      if(res.data.success){
+        window.location.href = "https://zerodha-lyart-three.vercel.app/";  // dashboard url link
+      }
+      else{
+        alert(res.data.message || "Invalid Email or password")
+      }
 
     } catch (err) {
       alert(err.response?.data?.message || "Invalid email Or Password")
