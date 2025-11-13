@@ -26,7 +26,7 @@ function Signup() {
 
       window.location.href = "https://zerodha-lyart-three.vercel.app/dashboard";
     } catch (error) {
-      alert(error.response?.data?.message || "Inavlid Password or email")
+      alert(error.response?.data?.message || "registration failed dut to some error ")
       console.error(error.response?.data || error.message);
     }
   };
