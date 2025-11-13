@@ -1,9 +1,8 @@
 import React from "react";
-import "../index.css"   // link the CSS file
+import "../index.css"; // link the CSS file
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-
 
 function Signup() {
   const [name, setName] = useState("");
@@ -11,23 +10,23 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [number, setNumber] = useState("");
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://zerodha-backend-pho2.onrender.com/signup", // backend url
+        "https://zerodha-backend-pho2.onrender.com/auth/signup", // backend url
         {
           name,
           email,
           password,
           mobileNumber: number,
-        }
+        },
+        {withCredentials:true}
       );
 
-          window.location.href = "https://zerodha-lyart-three.vercel.app//";
-
+      window.location.href = "https://zerodha-lyart-three.vercel.app/dashboard";
     } catch (error) {
+      alert(error.response?.data?.message || "Inavlid Password or email")
       console.error(error.response?.data || error.message);
     }
   };
