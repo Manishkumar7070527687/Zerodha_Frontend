@@ -24,7 +24,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/login" element={<Login />} />
 
       <Route path="/product" element={<ProductPage />} />
-      {/* <Route path="/price" element={<PricePage />} /> */}
+      <Route path="/price" element={<PricePage />} />
       <Route path="/support" element={<SupportPage />} />
 
       <Route path="*" element={<NotFound />} />
